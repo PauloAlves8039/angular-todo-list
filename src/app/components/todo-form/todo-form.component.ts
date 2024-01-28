@@ -11,8 +11,9 @@ import {
   Validators,
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { TodoSignalsService } from 'src/app/services/todo-signals.service';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-todo-form',
@@ -32,14 +33,12 @@ import { TodoSignalsService } from 'src/app/services/todo-signals.service';
 })
 export class TodoFormComponent {
   private todosSignalService = inject(TodoSignalsService);
+  private dialogRefService = inject(MatDialogRef<HeaderComponent>);
   public allTodos = this.todosSignalService.todosState();
 
   public todosForm = new FormGroup({
     title: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    description: new FormControl('', [
-      Validators.required,
-      Validators.minLength(5),
-    ]),
+    description: new FormControl('', [Validators.required, Validators.minLength(5)]),
   });
 
   public handleCreateNewTodo(): void {
@@ -50,6 +49,11 @@ export class TodoFormComponent {
       const done = false;
 
       this.todosSignalService.updateTodos({id, title, description, done});
+      this.dialogRefService.close();
     }
+  }
+
+  public handleCloseModal(): void {
+    this.dialogRefService.close();
   }
 }
