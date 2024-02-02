@@ -1,5 +1,5 @@
 import { TodoSignalsService } from './services/todo-signals.service';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { first } from 'rxjs';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -83,5 +83,16 @@ describe('AppComponent', () => {
     const paragraph: HTMLElement = paragraphDebugElement.nativeElement;
     expect(paragraph.textContent).toEqual('Test your Angular application');
   });
+
+  it('should isDoned property to be false', () => {
+    component.handleCheckIsDone();
+    expect(component.isDoned).toBe(false);
+  });
+
+  it('should isDoned property to be true', fakeAsync(() => {
+    component.handleCheckIsDone();
+    tick(200);
+    expect(component.isDoned).toBe(true);
+  }));
 
 });

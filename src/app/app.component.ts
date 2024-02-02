@@ -19,6 +19,7 @@ export class AppComponent {
   public title = 'todo-list';
   public todoSignal!: WritableSignal<Array<Todo>>;
   public renderTestMessage = false;
+  public isDoned = false;
 
   constructor(private todoSignalsService: TodoSignalsService) {}
 
@@ -31,5 +32,11 @@ export class AppComponent {
       this.todoSignalsService.updateTodos(todo);
       this.todoSignal = this.todoSignalsService.todosState;
     }
+  }
+
+  public handleCheckIsDone(): void {
+    setTimeout(() => {
+      this.isDoned = true;
+    }, 200);
   }
 }
