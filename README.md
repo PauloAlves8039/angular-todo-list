@@ -1,27 +1,50 @@
-# TodoList
+<h1 align="center">Todo List</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+<p align="center">
+  <a href="https://angular.io/"><img alt="Angular" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" /></a>
+</p>
 
-## Development server
+Repositório com uma aplicação web para simular um `Todo List` utilizando o `Angular` permitindo ao usuário adicionar e finalizar uma lista de tarefas, o código fonte do projeto foi baseado no curso [Formação Angular - 2024 (.NET 6)](https://www.udemy.com/course/curso-de-angular-15-do-iniciante-ao-especialista/).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O projeto está disponível em [todo-list](https://todo-list-nu-ecru.vercel.app/) 
 
-## Code scaffolding
+## :blue_book: Regra de Negócio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `Adição de Tarefas`: é possível adicionar tarefas preenchendo dados como `nome` e `descrição`.
+- `Estado Inicial`: quando uma tarefa é cadastrada o seu estado inicial é `Em andamento` sendo indicada na aba com o mesmo nome. 
+- `Conclusão de Tarefas`: com a tarefa criada é permitida a sua conclusão quando o usário julgar necessário.
+- `Estado Final`: quando uma tarefa é concluída o seu estado inicial passa a ser concluída sendo direcionada para uma aba com o nome `Concluídas`.
+- `Exclusão de Tarefas`: a qualquer momento é permitida a `exclusão` de tarefas clicando em um botão com ícone de uma lixeira. 
 
-## Build
+## ✔️ Recursos Utilizados
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ``Angular CLI v16.1.0``
+- ``Angular Core v16.1.0``
+- ``Angular Material``
+- ``Signals``
+- ``TDD - Jest``
+- ``Deploy - Vercel``
 
-## Running unit tests
+## :white_check_mark: Decisões Técnicas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Mantive a mesma estrutura do projeto apresentada no curso tanto no `desenvolmento` quanto no `deploy`.
+- Adicionei ajustes no tamanho do formulário para uma melhoria visual.
+- Procurei manter os mesmo exemplos apresentados nas aulas para os `testes de unidade`.
 
-## Running end-to-end tests
+## :camera: Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot1.PNG" /></p>
+<p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot2.PNG" /></p>
+<p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot3.PNG" /></p>
+<p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot4.PNG" /></p>
 
-## Further help
+## :floppy_disk: Clonar Repositório
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/PauloAlves8039/angular-todo-list.git
+```
+
+## :boy: Author
+
+<a href="https://github.com/PauloAlves8039"><img src="https://avatars.githubusercontent.com/u/57012714?v=4" width=70></a>
+[Paulo Alves](https://github.com/PauloAlves8039)
