@@ -31,18 +31,18 @@ O projeto está disponível em [todo-list](https://todo-list-nu-ecru.vercel.app/
 - Adicionei ajustes no tamanho do formulário para uma melhoria visual.
 - Procurei manter os mesmo exemplos apresentados nas aulas para os `testes de unidade`.
 
+## :floppy_disk: Clonar Repositório
+
+```bash
+git clone https://github.com/PauloAlves8039/angular-todo-list.git
+```
+
 ## :camera: Screenshots
 
 <p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot1.PNG" /></p>
 <p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot2.PNG" /></p>
 <p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot3.PNG" /></p>
 <p align="center"> <img src="https://github.com/PauloAlves8039/angular-todo-list/blob/master/src/assets/images/screenshot4.PNG" /></p>
-
-## :floppy_disk: Clonar Repositório
-
-```bash
-git clone https://github.com/PauloAlves8039/angular-todo-list.git
-```
 
 ## :boy: Author
 
