@@ -4,7 +4,7 @@
   <a href="https://angular.io/"><img alt="Angular" src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white" /></a>
 </p>
 
-Repositório com uma aplicação web para simular um `Todo List` utilizando o `Angular` permitindo ao usuário adicionar e finalizar uma lista de tarefas, o código fonte do projeto foi baseado no curso [Formação Angular - 2024 (.NET 6)](https://www.udemy.com/course/curso-de-angular-15-do-iniciante-ao-especialista/).
+Repositório com uma aplicação web para simular um `Todo List` utilizando o `Angular` permitindo ao usuário adicionar e finalizar uma lista de tarefas, o código fonte do projeto foi baseado no curso [Formação Angular - 2024](https://www.udemy.com/course/curso-de-angular-15-do-iniciante-ao-especialista/).
 
 O projeto está disponível em [todo-list](https://todo-list-nu-ecru.vercel.app/) 
 
